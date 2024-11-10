@@ -1,0 +1,134 @@
+/* Banner */
+.banner {
+    background: url('./img/agricultura-familiar-contag\ 1.png') center center/cover no-repeat;
+    padding: 300px 0; /* Mantém a imagem de fundo do banner */
+}
+
+/* Novo estilo para a seção de texto abaixo do banner */
+.banner-text {
+    background-color: #f8f9fa; /* Cor de fundo clara para o texto */
+    padding: 40px 0;
+}
+
+.banner-text h2 {
+    font-family: "Courgette";
+    font-style: normal;
+    font-size: 2.5rem;
+    
+}
+
+.banner-text p {
+    font-family: "Courgette";
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/* Produtos */
+.produtos img {
+    border-radius: 8px;
+}
+
+.produtos h3 {
+    font-family: "Courgette";
+    font-style: normal;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Eventos */
+.eventos {
+    background-color: #f9f9f9;
+    font-family: "Courgette";
+    font-style: normal;
+}
+
+/* Mapa */
+.mapa {
+    padding: 50px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    font-family: "Courgette";
+    font-style: normal;
+    height: 200px;
+    text-align: center;
+}
+
+footer h5 {
+    font-family: "Courgette";
+    font-style: normal;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .col-md-6:nth-child(2) {
+    padding-left: 350px; /* Ajuste este valor conforme necessário */
+}
+
+
+
+/* Faixa verde fina no topo */
+.top-bar {
+    background-color: #28a745; /* Cor verde */
+    height: 30px;
+    width: 100%;
+}
+
+
+/* Estilo personalizado para a barra de navegação */
+.navbar-custom {
+    height: 130px; /* Ajuste a altura desejada para a barra de navegação */
+    padding-top: 10px; /* Adiciona espaçamento para centralizar o conteúdo */
+    padding-bottom: 10px;
+}
+
+
+/* Barra de navegação */
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+    padding: 0 15px;
+    font-family: "Inter";
+    font-size: 1.4rem;
+    margin-right: 50px;
+}
+
+/* Efeito de hover */
+.navbar-nav .nav-link:hover {
+    color: #4CAF50 !important; /* Cor verde ao passar o mouse */
+    transform: scale(1.1); /* Aumento do tamanho do link */
+}
+
+
+/* Estilo para os nomes dentro de retângulos sobre as imagens de produtos */
+.produtos .col-md-4 {
+    position: relative;
+}
+
+.produtos h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: "Courgette";
+    transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+    cursor: pointer; /* Adiciona o efeito de mão ao passar o mouse */
+    
+}
+
+/* Efeito hover apenas no retângulo do texto */
+.produtos h3:hover {
+    transform: translateX(-50%) scale(1.1); /* Aumenta o tamanho do retângulo e centraliza */
+}
+
+
