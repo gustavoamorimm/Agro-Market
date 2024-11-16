@@ -1,0 +1,143 @@
+/* Faixa verde fina no topo */
+.top-bar {
+    background-color: #28a745; 
+    height: 30px;
+    width: 100%;
+}
+
+
+/* Estilo personalizado para a barra de navegação */
+.navbar-custom {
+    height: 130px; /* Ajuste a altura desejada para a barra de navegação */
+    padding-top: 10px; /* Adiciona espaçamento para centralizar o conteúdo */
+    padding-bottom: 10px;
+}
+
+
+/* Barra de navegação */
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+    padding: 0 15px;
+    font-family: "Inter";
+    font-size: 1.4rem;
+    margin-right: 50px;
+}
+
+/* Efeito de hover */
+.navbar-nav .nav-link:hover {
+    color: #4CAF50 !important; 
+    transform: scale(1.1); 
+}
+
+/* Estilo Pagina Produtos */
+
+/* Estilo para o banner da página Produtos */
+.banner-produtos {
+    background-image: url('./img/BannerProdutos.png'); /* Substitua pelo caminho da imagem do banner de produtos */
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Ajuste a altura do banner, se necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.banner-produtos h2 {
+    font-size: 2.5rem;
+    font-family: 'Courgette', cursive;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Aumentando o tamanho dos itens dentro do conteúdo do produto */
+.container.my-5 {
+    max-width: 90%; /* Ajusta a largura para ocupar mais espaço na tela */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Para o texto "Por: R$ 8,85" em negrito */
+.preco {
+    font-weight: bold; /* Aplica negrito */
+    font-size: 2rem; /* Ajuste do tamanho do texto, se necessário */
+    color: black; /* Altere para a cor desejada, se necessário */
+}
+
+.row.align-items-center {
+    display: flex;
+    justify-content: space-between; /* Dá mais espaço entre as colunas */
+}
+
+/* Ajusta a largura da imagem para que ocupe mais espaço */
+.col-md-4 img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% da coluna */
+    height: auto;
+    max-width: 450px; /* Aumenta o tamanho máximo da imagem */
+}
+
+/* Aumentar o tamanho das fontes e elementos de texto */
+h3 {
+    font-size: 2.5rem; /* Aumenta o tamanho do título do produto */
+}
+
+h4, h5 {
+    font-size: 2rem; /* Aumenta o tamanho do subtítulo e descrição */
+}
+
+p {
+    font-size: 1.5rem; /* Aumenta o tamanho da descrição do produto */
+}
+
+/* Ajusta o botão */
+.btn-success {
+    padding: 15px 30px; /* Aumenta o tamanho do botão */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte do botão */
+}
+
+/* Ajusta o espaçamento entre a descrição do produto e o vendedor */
+.mt-4 {
+    margin-top: 60px; /* Aumenta o espaçamento entre as seções */
+}
+
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    font-family: "Courgette";
+    font-style: normal;
+    height: 200px;
+    text-align: center;
+    margin-top: 120px;
+    height: auto;
+}
+
+footer h5 {
+    font-family: "Courgette";
+    font-style: normal;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .col-md-6:nth-child(2) {
+    padding-left: 350px; /* Ajuste este valor conforme necessário */
+}
+
+

@@ -1,6 +1,38 @@
+/* Faixa verde fina no topo */
+.top-bar {
+    background-color: #28a745; 
+    height: 30px;
+    width: 100%;
+}
+
+
+/* Estilo personalizado para a barra de navegação */
+.navbar-custom {
+    height: 130px; /* Ajuste a altura desejada para a barra de navegação */
+    padding-top: 10px; /* Adiciona espaçamento para centralizar o conteúdo */
+    padding-bottom: 10px;
+}
+
+
+/* Barra de navegação */
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+    padding: 0 15px;
+    font-family: "Inter";
+    font-size: 1.4rem;
+    margin-right: 50px;
+}
+
+/* Efeito de hover */
+.navbar-nav .nav-link:hover {
+    color: #4CAF50 !important; 
+    transform: scale(1.1); 
+}
+
+
 /* Banner */
 .banner {
-    background: url('./img/agricultura-familiar-contag\ 1.png') center center/cover no-repeat;
+    background: url('./img/BannerPaginaInicial.png') center center/cover no-repeat;
     padding: 300px 0; /* Mantém a imagem de fundo do banner */
 }
 
@@ -35,16 +67,39 @@
     font-weight: bold;
 }
 
+.produtos h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: "Courgette";
+    transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+    cursor: pointer; /* Adiciona o efeito de mão ao passar o mouse */
+    
+}
+
+/* Estilo para os nomes dentro de retângulos sobre as imagens de produtos */
+.produtos .col-md-4 {
+    position: relative;
+}
+
+
+/* Efeito hover apenas no retângulo do texto */
+.produtos h3:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+
 /* Eventos */
 .eventos {
     background-color: #f9f9f9;
     font-family: "Courgette";
     font-style: normal;
-}
-
-/* Mapa */
-.mapa {
-    padding: 50px 0;
 }
 
 /* Footer */
@@ -73,62 +128,174 @@ footer .col-md-6:nth-child(2) {
 
 
 
-/* Faixa verde fina no topo */
-.top-bar {
-    background-color: #28a745; /* Cor verde */
-    height: 30px;
-    width: 100%;
+/* Estilo Pagina Produtos */
+
+/* Estilo para o banner da página Produtos */
+.banner-produtos {
+    background-image: url('./img/BannerProdutos.png'); /* Substitua pelo caminho da imagem do banner de produtos */
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Ajuste a altura do banner, se necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.banner-produtos h2 {
+    font-size: 2.5rem;
+    font-family: 'Courgette', cursive;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 
-/* Estilo personalizado para a barra de navegação */
-.navbar-custom {
-    height: 130px; /* Ajuste a altura desejada para a barra de navegação */
-    padding-top: 10px; /* Adiciona espaçamento para centralizar o conteúdo */
-    padding-bottom: 10px;
+
+/* Fundo da seção de produtos em destaque */
+.produtos-destaque .fundo-produtos {
+    background-image: url('./img/BannerMaisVendidos.png'); /* Substitua pelo caminho correto da imagem */
+    background-size: cover;
+    background-position: center;
+    height: 450px; /* Ajuste a altura aqui para o tamanho desejado */
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------------------ */
+/* Estilo do Título "Mais Vendidos"          */
+/* ------------------------------------------ */
+.titulo-mais-vendidos {
+    font-family: 'Courgette', cursive;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+}
+
+/* Ajuste do título do banner de produtos */
+.produtos-destaque h2 {
+    margin-top: -15px; /* Ajusta a posição do título */
 }
 
 
-/* Barra de navegação */
-.navbar-nav .nav-link {
-    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
-    padding: 0 15px;
-    font-family: "Inter";
-    font-size: 1.4rem;
-    margin-right: 50px;
-}
-
-/* Efeito de hover */
-.navbar-nav .nav-link:hover {
-    color: #4CAF50 !important; /* Cor verde ao passar o mouse */
-    transform: scale(1.1); /* Aumento do tamanho do link */
-}
-
-
-/* Estilo para os nomes dentro de retângulos sobre as imagens de produtos */
-.produtos .col-md-4 {
-    position: relative;
-}
-
-.produtos h3 {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4CAF50;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-family: "Courgette";
-    transition: transform 0.3s ease; /* Transição suave para o efeito hover */
-    cursor: pointer; /* Adiciona o efeito de mão ao passar o mouse */
+/* ------------------------------------------ */
+/* Ajuste dos Quadrados de Produtos (Cards)  */
+/* ------------------------------------------ */
+.destaque-produto {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    margin: 10px; /* Espaçamento horizontal */
+    width: 240px; /* Reduz o tamanho para ajustar no banner */
+    display: flex;
+    text-align: center; /* Centraliza o conteúdo */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    min-height: 350px; /* Garante que todos os cards tenham a mesma altura */
+    border: 1px solid #000;
     
 }
 
-/* Efeito hover apenas no retângulo do texto */
-.produtos h3:hover {
-    transform: translateX(-50%) scale(1.1); /* Aumenta o tamanho do retângulo e centraliza */
+
+
+/* Estilo do botão dentro do quadrado de produto */
+.destaque-produto .btn {
+    margin-top: 15px; /* Espaço entre o texto e o botão */
+    padding: 10px 20px; /* Tamanho do botão */
+    font-size: 1rem; /* Tamanho da fonte do botão */
+    width: 100%; /* Faz o botão ocupar toda a largura do quadrado */
+    text-align: center; /* Centraliza o texto no botão */
 }
 
+/* Estilo do botão ao passar o mouse */
+.destaque-produto .btn:hover {
+    background-color: #218838; /* Um tom mais escuro de verde */
+}
+
+/* ------------------------------------------ */
+/* Ajuste do Layout da Linha de Produtos     */
+/* ------------------------------------------ */
+.produtos-destaque .row {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    gap: 90px; /* Ajusta o espaço entre os produtos */
+    margin-top: -15px; /* Ajusta a posição para cima */
+}
+
+
+/* ------------------------------------------ */
+/* Estilo das Imagens dos Produtos           */
+/* ------------------------------------------ */
+.produtos-destaque .img-produto {
+    width: 150px; /* Tamanho das imagens dos produtos */
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    margin-left: auto; /* Empurra a imagem para a direita */
+    margin-right: 30px; /* Adiciona um pequeno espaço à direita */
+}
+
+/* ------------------------------------------ */
+/* Estilo do Título e Descrição do Produto   */
+/* ------------------------------------------ */
+.produtos-destaque h5 {
+    font-family: 'Alata';
+    font-size: 1.2rem; /* Ajuste o tamanho da fonte */
+    color: #333;
+    margin-top: 10px;
+}
+
+.produtos-destaque p {
+    font-family: 'Alata';
+    font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+    color: #555;
+    margin-top: 5px;
+    
+}
+
+
+.img-produto {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.destaque-produto h5 {
+    font-family: 'Alata', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.destaque-produto p {
+    font-family: 'Alata', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.destaque-produto .btn {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    width: 100%; /* Botão ocupa toda a largura */
+    text-align: center; /* Centraliza o texto no botão */
+}
+
+.destaque-produto .btn:hover {
+    background-color: #218838;
+}
+
+.produtos-destaque {
+    margin-bottom: 120px; /* Adiciona um espaçamento entre as seções */
+}
+
+
+.preco {
+    color: #000000; /* Preto mais forte */
+    font-weight: 700; /* Negrito mais forte */
+}
 
