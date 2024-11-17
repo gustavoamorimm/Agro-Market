@@ -439,15 +439,15 @@ footer .col-md-6:nth-child(2) {
     background: url('./img/sobre-nos-banner.jpg') center center/cover no-repeat;
     height: 350px;
     width: 100%;
+    margin-bottom: -400px;
 }
 
 /* Sobre Nós */
 .sobre-nos {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Courgette';
     line-height: 1.8;
     color: #555;
-    padding: 20px 15%;
-    margin-top: -330px;
+    padding: 50px 15%;
 }
 
 .sobre-nos h3 {
@@ -455,42 +455,20 @@ footer .col-md-6:nth-child(2) {
     margin-top: 30px;
     font-family: 'Courgette';
     font-size: 1.8rem;
+    
 }
 
 .sobre-nos ul {
+    font-family: 'Courgette';
     margin-top: 20px;
     list-style: disc;
-    margin-left: -15px;
-    font-family: 'Courgette';
+    margin-left: 10px;
+    font-size: 1.2rem;
 }
 
 .sobre-nos p {
     margin: 15px 0;
-    font-family: "Courgette";
-    font-size: 1.2rem;
-    
-
+    font-size: 1.4rem;
 }
 
-/* Footer */
-footer {
-    background-color: #28a745;
-    color: white;
-    padding: 30px 15%;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-info, .footer-contact {
-    flex: 1;
-    padding: 10px;
-}
-
-.footer-info p, .footer-contact p {
-    margin: 0;
-    font-size: 14px;
-}
 
