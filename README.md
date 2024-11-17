@@ -14,7 +14,7 @@
 <p><b>Formulário de Contato:</b> Entre em contato com a ONG para mais informações ou iniciar o processo de adoção.</p>
 
 ## Desenvolvedor
-<p>Gustavo Amorim - <a href="https://www.linkedin.com/in/gustavo-amorim-5194951a9" target="_blank" style="text-decoration: underline">gustavo-amorim</a></p>
+<p>Gustavo Amorim - <a href="https://www.linkedin.com/in/gustavo-amorim-5194951a9" target="_blank" style="text-decoration: underline">Gustavo-Amorim</a></p>
 
 ## Tecnologias Utilizadas
 - HTML

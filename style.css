@@ -283,10 +283,12 @@ footer .col-md-6:nth-child(2) {
     padding: 8px 15px;
     width: 100%; /* Botão ocupa toda a largura */
     text-align: center; /* Centraliza o texto no botão */
+    transition: transform 0.3s ease;
 }
 
 .destaque-produto .btn:hover {
     background-color: #218838;
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
 }
 
 .produtos-destaque {
@@ -297,5 +299,198 @@ footer .col-md-6:nth-child(2) {
 .preco {
     color: #000000; /* Preto mais forte */
     font-weight: 700; /* Negrito mais forte */
+}
+
+
+/* Pagina Contato */
+
+
+/* Banner da página de contato */
+.banner-contato {
+    background: url('./img/Banner-Contato.png') center center/cover no-repeat;
+    height: 500px; /* Ajuste a altura para o tamanho do banner */
+    padding-top: 40px; /* Adiciona um pequeno padding no topo para o texto */
+    color: transparent; /* Cor transparente para esconder o texto da imagem */
+}
+
+.banner-contato .container {
+    text-align: center;
+    background-color: transparent; /* Remove qualquer fundo do container */
+}
+
+/* Texto de contato que ficará abaixo da imagem do banner */
+.banner-contato-texto {
+    background-color: #f8f9fa; /* Cor clara para o fundo do texto */
+    padding: 40px 0; /* Adiciona um espaçamento interno */
+    text-align: center;
+}
+
+.banner-contato-texto h2 {
+    font-family: "Courgette", cursive;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.banner-contato-texto p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Texto abaixo do banner com nova fonte */
+.banner-contato-texto p {
+    font-family: "Courgette";
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.banner-contato-texto p strong {
+    font-weight: bold;
+    color: black; /* Altere para a cor desejada, se necessário */
+}
+
+.espaco-contato {
+    display: inline-block;
+    margin-bottom: 15px; /* Ajuste o valor conforme necessário */
+    color: #4CAF50
+}
+
+/* Aumentando o tamanho do formulário */
+.formulario-contato form {
+    background-color: #4CAF50;
+    padding: 50px 80px; /* Aumenta o padding para criar mais espaço dentro do formulário */
+    width: 100%; /* Faz o formulário ocupar toda a largura possível */
+    max-width: 800px; /* Ajusta a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário na tela */
+    border-radius: 10px; /* Arredonda os cantos do formulário */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    min-height: 580px;
+}
+
+/* Aumentar o tamanho dos campos de entrada */
+.formulario-contato .form-control {
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte nos campos */
+    padding: 15px; /* Aumenta o padding dentro dos campos */
+    border-radius: 8px; /* Arredonda os cantos dos campos */
+}
+
+/* Ajustando o botão de envio */
+.formulario-contato button {
+    font-size: 1.2rem; /* Diminui o tamanho da fonte do botão */
+    padding: 10px 20px; /* Diminui o padding do botão, reduzindo o comprimento */
+    border-radius: 8px; /* Arredonda os cantos do botão */
+    width: auto; /* Mantém o tamanho do botão proporcional ao conteúdo */
+    max-width: 160px; /* Define uma largura máxima para o botão, ajustável conforme necessário */
+    margin: 30px auto 0; /* Centraliza o botão horizontalmente */
+    display: block; /* Torna o botão um bloco para aplicar o margin: auto */
+}
+
+.formulario-contato .form-label {
+    font-size: 1.3rem; /* Aumenta o tamanho da fonte */
+    color: black;
+    font-family: "Inter";
+}
+
+
+/* Pagina Sobre */
+
+/* Barra Superior */
+.top-bar {
+    background-color: #28a745;
+    height: 10px;
+    width: 100%;
+}
+
+/* Cabeçalho */
+.navbar {
+    background-color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+    height: 80px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar .nav-links li a.active {
+    color: #28a745;
+}
+
+/* Banner */
+.banner-sobre {
+    background: url('./img/sobre-nos-banner.jpg') center center/cover no-repeat;
+    height: 350px;
+    width: 100%;
+}
+
+/* Sobre Nós */
+.sobre-nos {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    color: #555;
+    padding: 20px 15%;
+    margin-top: -330px;
+}
+
+.sobre-nos h3 {
+    color: #28a745;
+    margin-top: 30px;
+    font-family: 'Courgette';
+    font-size: 1.8rem;
+}
+
+.sobre-nos ul {
+    margin-top: 20px;
+    list-style: disc;
+    margin-left: -15px;
+    font-family: 'Courgette';
+}
+
+.sobre-nos p {
+    margin: 15px 0;
+    font-family: "Courgette";
+    font-size: 1.2rem;
+    
+
+}
+
+/* Footer */
+footer {
+    background-color: #28a745;
+    color: white;
+    padding: 30px 15%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info, .footer-contact {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-info p, .footer-contact p {
+    margin: 0;
+    font-size: 14px;
 }
 

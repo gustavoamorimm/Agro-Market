@@ -29,11 +29,10 @@
     transform: scale(1.1); 
 }
 
-/* Estilo Pagina Produtos */
 
 /* Estilo para o banner da página Produtos */
 .banner-produtos {
-    background-image: url('./img/BannerProdutos.png'); /* Substitua pelo caminho da imagem do banner de produtos */
+    background-image: url('../img/BannerProdutos.png'); /* Substitua pelo caminho da imagem do banner de produtos */
     background-size: cover;
     background-position: center;
     height: 250px; /* Ajuste a altura do banner, se necessário */
@@ -54,21 +53,27 @@
     background-color: #4CAF50;
     border: none;
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    padding: 10px 20px;
+    font-size: 1.5rem;
+    padding: 10px 60px;
     transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .btn-success:hover {
     background-color: #45a049;
-    transform: scale(1.1);
+    transform: scale(1.1); /* Aumenta o botão*/
 }
+
 
 /* Aumentando o tamanho dos itens dentro do conteúdo do produto */
 .container.my-5 {
-    max-width: 90%; /* Ajusta a largura para ocupar mais espaço na tela */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    padding: 100px; /* Espaçamento interno para melhorar a aparência */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o produto */
+    position: relative;
 }
+
 
 /* Para o texto "Por: R$ 8,85" em negrito */
 .preco {
@@ -77,44 +82,38 @@
     color: black; /* Altere para a cor desejada, se necessário */
 }
 
-.row.align-items-center {
-    display: flex;
-    justify-content: space-between; /* Dá mais espaço entre as colunas */
+/* Ajusta o espaçamento entre a descrição do produto e o vendedor */
+.descricao-vendedor {
+    margin-top: 60px; /* Aumenta o espaçamento entre as seções */
+    
 }
 
 /* Ajusta a largura da imagem para que ocupe mais espaço */
 .col-md-4 img {
-    width: 100%; /* Ajusta a largura da imagem para ocupar 100% da coluna */
+    width: 100%; /* Mantém a largura proporcional à coluna */
     height: auto;
-    max-width: 450px; /* Aumenta o tamanho máximo da imagem */
+    max-width: 550px; /* Aumenta o tamanho máximo da imagem */
+    margin-top: -30px; /* Move a imagem mais para cima */
 }
 
 /* Aumentar o tamanho das fontes e elementos de texto */
 h3 {
     font-size: 2.5rem; /* Aumenta o tamanho do título do produto */
+    font-family: 'Alata';
 }
 
 h4, h5 {
     font-size: 2rem; /* Aumenta o tamanho do subtítulo e descrição */
+    font-family: 'Alata';
 }
 
 p {
     font-size: 1.5rem; /* Aumenta o tamanho da descrição do produto */
 }
 
-/* Ajusta o botão */
-.btn-success {
-    padding: 15px 30px; /* Aumenta o tamanho do botão */
-    font-size: 1.5rem; /* Aumenta o tamanho da fonte do botão */
-}
-
-/* Ajusta o espaçamento entre a descrição do produto e o vendedor */
-.mt-4 {
-    margin-top: 60px; /* Aumenta o espaçamento entre as seções */
-}
-
 
 /* Footer */
+
 footer {
     background-color: #4CAF50;
     font-family: "Courgette";
