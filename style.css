@@ -30,11 +30,23 @@
 }
 
 
-/* Banner */
-.banner {
-    background: url('./img/BannerPaginaInicial.png') center center/cover no-repeat;
-    padding: 300px 0; /* Mantém a imagem de fundo do banner */
+/* Estilo do carrossel */
+.carousel-inner img {
+    height: 700px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que as imagens preencham o espaço sem distorção */
 }
+
+/* Remove margens laterais e ajusta as setas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Torna as setas brancas para contrastar com imagens escuras */
+}
+
+.banner {
+    background-color: #000; /* Cor de fundo no caso de imagens transparentes */
+    padding: 0; /* Remove o padding do banner para que ocupe toda a largura */
+}
+
 
 /* Novo estilo para a seção de texto abaixo do banner */
 .banner-text {
@@ -95,7 +107,6 @@
 }
 
 
-/* Eventos */
 .eventos {
     background-color: #f9f9f9;
     font-family: "Courgette";
@@ -299,6 +310,87 @@ footer .col-md-6:nth-child(2) {
 .preco {
     color: #000000; /* Preto mais forte */
     font-weight: 700; /* Negrito mais forte */
+}
+
+
+
+/* Pagina Eventos */
+
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    background-image: url('./img/Banner-eventos.png'); /* Insira a imagem do topo aqui */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px
+}
+
+body {
+    font-family: 'Courgette';
+    
+}
+
+.section-title {
+    font-family: 'Courgette';
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    margin-bottom: 25px
+}
+
+.highlight-text {
+    color: #28a745; 
+}
+
+.event-description {
+    font-family: "Courgette";
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+.events {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+    margin-bottom: 70px;
+}
+.event-card {
+    font-family: "Courgette";
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.event-card .card-body {
+    padding: 20px;
+}
+.event-card .btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+}
+
+.event-card .btn:hover {
+    transform: scale(1.1); 
 }
 
 
