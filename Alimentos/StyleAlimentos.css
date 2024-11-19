@@ -1,142 +1,138 @@
-/* Faixa verde fina no topo */
+/* Faixa verde fina no topo da página */
 .top-bar {
     background-color: #28a745; 
-    height: 30px;
-    width: 100%;
+    height: 10px; /* Define a altura da faixa */
+    width: 100%; /* Ocupa toda a largura da página */
 }
 
-
-/* Estilo personalizado para a barra de navegação */
+/* Estilo geral da barra de navegação */
 .navbar-custom {
-    height: 130px; /* Ajuste a altura desejada para a barra de navegação */
-    padding-top: 10px; /* Adiciona espaçamento para centralizar o conteúdo */
-    padding-bottom: 10px;
+    height: 130px; /* Define a altura da barra de navegação */
+    padding-top: 10px; /* Espaçamento superior */
+    padding-bottom: 10px; /* Espaçamento inferior */
 }
 
-
-/* Barra de navegação */
+/* Estilo dos links da barra de navegação */
 .navbar-nav .nav-link {
-    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
-    padding: 0 15px;
-    font-family: "Inter";
-    font-size: 1.4rem;
-    margin-right: 50px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave ao passar o mouse */
+    padding: 0 15px; /* Espaçamento horizontal */
+    font-family: "Inter"; /* Define a fonte dos links */
+    font-size: 1.4rem; /* Tamanho do texto */
+    margin-right: 50px; /* Espaçamento entre os links */
 }
 
-/* Efeito de hover */
+/* Efeito de hover nos links da barra de navegação */
 .navbar-nav .nav-link:hover {
-    color: #4CAF50 !important; 
-    transform: scale(1.1); 
+    color: #4CAF50 !important; /* Muda a cor do link ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho levemente */
 }
 
-
-/* Estilo para o banner da página Produtos */
+/* Banner da página de produtos */
 .banner-produtos {
-    background-image: url('../img/BannerProdutos.png'); /* Substitua pelo caminho da imagem do banner de produtos */
-    background-size: cover;
-    background-position: center;
-    height: 250px; /* Ajuste a altura do banner, se necessário */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    margin-bottom: 100px;
+    background-image: url('../img/BannerProdutos.png'); /* Imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    height: 250px; /* Define a altura do banner */
+    display: flex; /* Habilita flexbox para centralizar conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    color: #fff; /* Cor do texto */
+    margin-bottom: 100px; /* Espaçamento inferior */
 }
 
+/* Estilo do título no banner */
 .banner-produtos h2 {
-    font-size: 2.5rem;
-    font-family: 'Courgette', cursive;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-size: 2.5rem; /* Tamanho do texto */
+    font-family: 'Courgette', cursive; /* Fonte personalizada */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra no texto */
 }
 
+/* Botão principal */
 .btn-success {
-    background-color: #4CAF50;
-    border: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
-    padding: 10px 60px;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+    background-color: #4CAF50; /* Cor de fundo */
+    border: none; /* Remove borda padrão */
+    font-family: 'Inter', sans-serif; /* Fonte personalizada */
+    font-size: 1.5rem; /* Tamanho do texto */
+    padding: 10px 60px; /* Tamanho e espaçamento interno do botão */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Animação ao passar o mouse */
 }
 
+/* Efeito de hover no botão */
 .btn-success:hover {
-    background-color: #45a049;
-    transform: scale(1.1); /* Aumenta o botão*/
+    background-color: #45a049; /* Cor alterada ao passar o mouse */
+    transform: scale(1.1); /* Aumenta levemente o botão */
 }
 
-
-/* Aumentando o tamanho dos itens dentro do conteúdo do produto */
+/* Estilo do container da seção de produtos */
 .container.my-5 {
-    max-width: 90%;
-    margin: 0 auto;
-    background-color: #f9f9f9; /* Fundo cinza claro */
-    padding: 100px; /* Espaçamento interno para melhorar a aparência */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o produto */
-    position: relative;
+    max-width: 90%; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    background-color: #f9f9f9; /* Cor de fundo */
+    padding: 100px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+    position: relative; /* Define um contexto de posicionamento */
 }
 
-
-/* Para o texto "Por: R$ 8,85" em negrito */
+/* Estilo para destacar o preço em negrito */
 .preco {
-    font-weight: bold; /* Aplica negrito */
-    font-size: 2rem; /* Ajuste do tamanho do texto, se necessário */
-    color: black; /* Altere para a cor desejada, se necessário */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 2rem; /* Tamanho maior do texto */
+    color: black; /* Cor do texto */
 }
 
-/* Ajusta o espaçamento entre a descrição do produto e o vendedor */
+/* Espaçamento entre a descrição do produto e o vendedor */
 .descricao-vendedor {
-    margin-top: 60px; /* Aumenta o espaçamento entre as seções */
-    
+    margin-top: 60px; /* Espaçamento superior */
 }
 
-/* Ajusta a largura da imagem para que ocupe mais espaço */
+/* Estilo das imagens na seção de produtos */
 .col-md-4 img {
-    width: 100%; /* Mantém a largura proporcional à coluna */
-    height: auto;
-    max-width: 550px; /* Aumenta o tamanho máximo da imagem */
-    margin-top: -30px; /* Move a imagem mais para cima */
+    width: 100%; /* Imagem ocupa a largura total do container */
+    height: auto; /* Mantém a proporção */
+    max-width: 550px; /* Define largura máxima */
+    margin-top: -30px; /* Move a imagem ligeiramente para cima */
 }
 
-/* Aumentar o tamanho das fontes e elementos de texto */
+/* Estilo dos títulos de diferentes tamanhos */
 h3 {
-    font-size: 2.5rem; /* Aumenta o tamanho do título do produto */
-    font-family: 'Alata';
+    font-size: 2.5rem; /* Tamanho maior para o título */
+    font-family: 'Alata'; /* Fonte personalizada */
 }
 
 h4, h5 {
-    font-size: 2rem; /* Aumenta o tamanho do subtítulo e descrição */
-    font-family: 'Alata';
+    font-size: 2rem; /* Tamanho para subtítulos e seções menores */
+    font-family: 'Alata'; /* Fonte personalizada */
 }
 
+/* Estilo dos parágrafos */
 p {
-    font-size: 1.5rem; /* Aumenta o tamanho da descrição do produto */
+    font-size: 1.5rem; /* Tamanho maior para textos */
 }
 
-
-/* Footer */
-
+/* Estilo geral do rodapé */
 footer {
-    background-color: #4CAF50;
-    font-family: "Courgette";
-    font-style: normal;
-    height: 200px;
-    text-align: center;
-    margin-top: 120px;
-    height: auto;
+    background-color: #4CAF50; /* Cor de fundo */
+    font-family: "Courgette"; /* Fonte personalizada */
+    font-style: normal; /* Estilo padrão */
+    text-align: center; /* Alinhamento centralizado */
+    margin-top: 120px; /* Espaçamento superior antes do rodapé */
+    height: auto; /* Altura automática */
+    padding: 20px 0; /* Espaçamento interno */
 }
 
+/* Estilo dos títulos no rodapé */
 footer h5 {
-    font-family: "Courgette";
-    font-style: normal;
-    margin-bottom: 10px;
-    margin-top: 40px;
+    font-family: "Courgette"; /* Fonte personalizada */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    margin-top: 40px; /* Espaçamento superior */
 }
 
+/* Estilo dos textos no rodapé */
 footer p {
-    margin: 0;
+    margin: 0; /* Remove margem padrão */
 }
 
+/* Ajuste para a coluna específica no rodapé */
 footer .col-md-6:nth-child(2) {
-    padding-left: 350px; /* Ajuste este valor conforme necessário */
+    padding-left: 350px; /* Espaçamento interno à esquerda */
 }
-
-
