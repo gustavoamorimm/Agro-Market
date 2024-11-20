@@ -1,138 +1,141 @@
 /* Faixa verde fina no topo da página */
 .top-bar {
     background-color: #28a745; 
-    height: 10px; /* Define a altura da faixa */
-    width: 100%; /* Ocupa toda a largura da página */
+    height: 10px; 
+    width: 100%; 
 }
 
-/* Estilo geral da barra de navegação */
+/* Estilo a barra de navegação */
 .navbar-custom {
-    height: 130px; /* Define a altura da barra de navegação */
-    padding-top: 10px; /* Espaçamento superior */
-    padding-bottom: 10px; /* Espaçamento inferior */
+    height: 130px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; /
 }
 
 /* Estilo dos links da barra de navegação */
 .navbar-nav .nav-link {
-    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave ao passar o mouse */
-    padding: 0 15px; /* Espaçamento horizontal */
-    font-family: "Inter"; /* Define a fonte dos links */
-    font-size: 1.4rem; /* Tamanho do texto */
-    margin-right: 50px; /* Espaçamento entre os links */
+    transition: transform 0.3s ease, color 0.3s ease; 
+    padding: 0 15px; 
+    font-family: "Inter"; 
+    font-size: 1.4rem; 
+    margin-right: 50px; 
 }
 
 /* Efeito de hover nos links da barra de navegação */
 .navbar-nav .nav-link:hover {
-    color: #4CAF50 !important; /* Muda a cor do link ao passar o mouse */
-    transform: scale(1.1); /* Aumenta o tamanho levemente */
+    color: #4CAF50 !important; 
+    transform: scale(1.1); /* Aumenta o tamanho levemente das letras */
 }
 
 /* Banner da página de produtos */
 .banner-produtos {
-    background-image: url('../img/BannerProdutos.png'); /* Imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área */
-    background-position: center; /* Centraliza a imagem */
-    height: 250px; /* Define a altura do banner */
-    display: flex; /* Habilita flexbox para centralizar conteúdo */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    color: #fff; /* Cor do texto */
-    margin-bottom: 100px; /* Espaçamento inferior */
+    background-image: url('../img/BannerProdutos.png'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 250px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #fff; 
+    margin-bottom: 100px; 
 }
 
 /* Estilo do título no banner */
 .banner-produtos h2 {
-    font-size: 2.5rem; /* Tamanho do texto */
+    font-size: 2.5rem; 
     font-family: 'Courgette', cursive; /* Fonte personalizada */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra no texto */
 }
 
-/* Botão principal */
-.btn-success {
-    background-color: #4CAF50; /* Cor de fundo */
-    border: none; /* Remove borda padrão */
-    font-family: 'Inter', sans-serif; /* Fonte personalizada */
-    font-size: 1.5rem; /* Tamanho do texto */
-    padding: 10px 60px; /* Tamanho e espaçamento interno do botão */
-    transition: transform 0.2s ease, background-color 0.3s ease; /* Animação ao passar o mouse */
-}
 
-/* Efeito de hover no botão */
-.btn-success:hover {
-    background-color: #45a049; /* Cor alterada ao passar o mouse */
-    transform: scale(1.1); /* Aumenta levemente o botão */
-}
 
 /* Estilo do container da seção de produtos */
 .container.my-5 {
-    max-width: 90%; /* Largura máxima do container */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    background-color: #f9f9f9; /* Cor de fundo */
-    padding: 100px; /* Espaçamento interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
-    position: relative; /* Define um contexto de posicionamento */
-}
-
-/* Estilo para destacar o preço em negrito */
-.preco {
-    font-weight: bold; /* Texto em negrito */
-    font-size: 2rem; /* Tamanho maior do texto */
-    color: black; /* Cor do texto */
-}
-
-/* Espaçamento entre a descrição do produto e o vendedor */
-.descricao-vendedor {
-    margin-top: 60px; /* Espaçamento superior */
+    max-width: 90%; 
+    margin: 0 auto; 
+    background-color: #f9f9f9; 
+    padding: 100px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative; 
 }
 
 /* Estilo das imagens na seção de produtos */
 .col-md-4 img {
-    width: 100%; /* Imagem ocupa a largura total do container */
-    height: auto; /* Mantém a proporção */
-    max-width: 550px; /* Define largura máxima */
-    margin-top: -30px; /* Move a imagem ligeiramente para cima */
+    width: 100%; 
+    height: auto; 
+    max-width: 550px; 
+    margin-top: -30px; 
+}
+
+/* Estilo para destacar o preço em negrito */
+.preco {
+    font-weight: bold; 
+    font-size: 2rem; 
+    color: black; 
+}
+
+/* Espaçamento entre a descrição do produto e o vendedor */
+.descricao-vendedor {
+    margin-top: 60px; 
+}
+
+
+/* Botão principal */
+.btn-success {
+    background-color: #4CAF50; 
+    border: none; 
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.5rem; 
+    padding: 10px 60px; 
+    transition: transform 0.2s ease, background-color 0.3s ease; 
+}
+
+/* Efeito de hover no botão */
+.btn-success:hover {
+    background-color: #45a049; 
+    transform: scale(1.1); 
 }
 
 /* Estilo dos títulos de diferentes tamanhos */
 h3 {
-    font-size: 2.5rem; /* Tamanho maior para o título */
-    font-family: 'Alata'; /* Fonte personalizada */
+    font-size: 2.5rem; 
+    font-family: 'Alata'; 
 }
 
 h4, h5 {
-    font-size: 2rem; /* Tamanho para subtítulos e seções menores */
-    font-family: 'Alata'; /* Fonte personalizada */
+    font-size: 2rem; 
+    font-family: 'Alata'; 
 }
 
 /* Estilo dos parágrafos */
 p {
-    font-size: 1.5rem; /* Tamanho maior para textos */
+    font-size: 1.5rem; 
 }
 
-/* Estilo geral do rodapé */
+/* Footer */
 footer {
-    background-color: #4CAF50; /* Cor de fundo */
-    font-family: "Courgette"; /* Fonte personalizada */
-    font-style: normal; /* Estilo padrão */
-    text-align: center; /* Alinhamento centralizado */
-    margin-top: 120px; /* Espaçamento superior antes do rodapé */
-    height: auto; /* Altura automática */
-    padding: 20px 0; /* Espaçamento interno */
+    background-color: #4CAF50; 
+    font-family: "Courgette"; 
+    font-style: normal; 
+    text-align: center; 
+    margin-top: 120px; 
+    height: auto; 
+    padding: 20px 0; 
 }
 
 /* Estilo dos títulos no rodapé */
 footer h5 {
-    font-family: "Courgette"; /* Fonte personalizada */
-    margin-bottom: 10px; /* Espaçamento inferior */
-    margin-top: 40px; /* Espaçamento superior */
+    font-family: "Courgette"; 
+    margin-bottom: 10px; 
+    margin-top: 40px; 
 }
 
 /* Estilo dos textos no rodapé */
 footer p {
-    margin: 0; /* Remove margem padrão */
+    margin: 0; 
 }
 
 /* Ajuste para a coluna específica no rodapé */
 footer .col-md-6:nth-child(2) {
-    padding-left: 350px; /* Espaçamento interno à esquerda */
+    padding-left: 350px; 
 }

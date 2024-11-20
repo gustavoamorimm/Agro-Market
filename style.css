@@ -6,17 +6,17 @@
 }
 
 
-/* Estilo personalizado para a barra de navegação */
+/* Estilo para a barra de navegação */
 .navbar-custom {
-    height: 130px; /* Ajuste a altura desejada para a barra de navegação */
-    padding-top: 10px; /* Adiciona espaçamento para centralizar o conteúdo */
+    height: 130px; 
+    padding-top: 10px; 
     padding-bottom: 10px;
 }
 
 
 /* Barra de navegação */
 .navbar-nav .nav-link {
-    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave para o efeito */
+    transition: transform 0.3s ease, color 0.3s ease; 
     padding: 0 15px;
     font-family: "Inter";
     font-size: 1.4rem;
@@ -32,25 +32,25 @@
 
 /* Estilo do carrossel */
 .carousel-inner img {
-    height: 700px; /* Altura fixa para as imagens */
-    object-fit: cover; /* Garante que as imagens preencham o espaço sem distorção */
+    height: 700px; 
+    object-fit: cover; 
 }
 
 /* Remove margens laterais e ajusta as setas */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(1); /* Torna as setas brancas para contrastar com imagens escuras */
+    filter: invert(1); 
 }
 
 .banner {
-    background-color: #000; /* Cor de fundo no caso de imagens transparentes */
-    padding: 0; /* Remove o padding do banner para que ocupe toda a largura */
+    background-color: #000; 
+    padding: 0; 
 }
 
 
-/* Novo estilo para a seção de texto abaixo do banner */
+/*seção de texto abaixo do banner */
 .banner-text {
-    background-color: #f8f9fa; /* Cor de fundo clara para o texto */
+    background-color: #f8f9fa; 
     padding: 40px 0;
 }
 
@@ -90,8 +90,8 @@
     border-radius: 5px;
     font-size: 1.2rem;
     font-family: "Courgette";
-    transition: transform 0.3s ease; /* Transição suave para o efeito hover */
-    cursor: pointer; /* Adiciona o efeito de mão ao passar o mouse */
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
     
 }
 
@@ -111,6 +111,13 @@
     background-color: #f9f9f9;
     font-family: "Courgette";
     font-style: normal;
+}
+
+/* Estilização mapa do Google Maps */
+#map{
+    height: 500px; 
+    width: 100%; 
+    margin-top: 50px;
 }
 
 /* Footer */
@@ -143,10 +150,10 @@ footer .col-md-6:nth-child(2) {
 
 /* Estilo para o banner da página Produtos */
 .banner-produtos {
-    background-image: url('./img/BannerProdutos.png'); /* Substitua pelo caminho da imagem do banner de produtos */
+    background-image: url('./img/BannerProdutos.png'); 
     background-size: cover;
     background-position: center;
-    height: 250px; /* Ajuste a altura do banner, se necessário */
+    height: 250px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,20 +171,19 @@ footer .col-md-6:nth-child(2) {
 
 /* Fundo da seção de produtos em destaque */
 .produtos-destaque .fundo-produtos {
-    background-image: url('./img/BannerMaisVendidos.png'); /* Substitua pelo caminho correto da imagem */
+    background-image: url('./img/BannerMaisVendidos.png'); 
     background-size: cover;
     background-position: center;
-    height: 450px; /* Ajuste a altura aqui para o tamanho desejado */
+    height: 450px; 
     display: flex;
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; 
+    justify-content: center; 
     padding: 0;
     margin: 0;
 }
 
-/* ------------------------------------------ */
-/* Estilo do Título "Mais Vendidos"          */
-/* ------------------------------------------ */
+/* Estilo do Título "Mais Vendidos"*/
+
 .titulo-mais-vendidos {
     font-family: 'Courgette', cursive;
     font-size: 2.5rem;
@@ -186,82 +192,78 @@ footer .col-md-6:nth-child(2) {
     margin-bottom: 15px;
 }
 
-/* Ajuste do título do banner de produtos */
+/* Ajuste do título do banner de produtos*/
 .produtos-destaque h2 {
-    margin-top: -15px; /* Ajusta a posição do título */
+    margin-top: -15px; 
 }
 
+/* Ajuste dos Quadrados de Produtos (Cards)*/
 
-/* ------------------------------------------ */
-/* Ajuste dos Quadrados de Produtos (Cards)  */
-/* ------------------------------------------ */
 .destaque-produto {
     background: #fff;
     border: 1px solid #ccc;
     padding: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
-    margin: 10px; /* Espaçamento horizontal */
-    width: 240px; /* Reduz o tamanho para ajustar no banner */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 10px; 
+    width: 240px; 
     display: flex;
-    text-align: center; /* Centraliza o conteúdo */
-    flex-direction: column; /* Organiza os itens verticalmente */
-    justify-content: space-between; /* Distribui o espaço entre os elementos */
-    min-height: 350px; /* Garante que todos os cards tenham a mesma altura */
+    text-align: center; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 350px; 
     border: 1px solid #000;
     
 }
 
 
-
-/* Estilo do botão dentro do quadrado de produto */
+/* Estilo do botão dentro do quadrado de produto*/
 .destaque-produto .btn {
-    margin-top: 15px; /* Espaço entre o texto e o botão */
-    padding: 10px 20px; /* Tamanho do botão */
-    font-size: 1rem; /* Tamanho da fonte do botão */
-    width: 100%; /* Faz o botão ocupar toda a largura do quadrado */
-    text-align: center; /* Centraliza o texto no botão */
+    margin-top: 15px; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    width: 100%; 
+    text-align: center; 
 }
 
-/* Estilo do botão ao passar o mouse */
+/* Estilo do botão ao passar o mouse*/
 .destaque-produto .btn:hover {
-    background-color: #218838; /* Um tom mais escuro de verde */
+    background-color: #218838; 
 }
 
-/* ------------------------------------------ */
-/* Ajuste do Layout da Linha de Produtos     */
-/* ------------------------------------------ */
+
+/* Ajuste do Layout da Linha de Produtos*/
+
 .produtos-destaque .row {
     display: flex;
-    justify-content: center; /* Centraliza os itens */
-    gap: 90px; /* Ajusta o espaço entre os produtos */
-    margin-top: -15px; /* Ajusta a posição para cima */
+    justify-content: center; 
+    gap: 90px; 
+    margin-top: -15px; 
 }
 
 
-/* ------------------------------------------ */
-/* Estilo das Imagens dos Produtos           */
-/* ------------------------------------------ */
+/* Estilo das Imagens dos Produtos*/
+
 .produtos-destaque .img-produto {
-    width: 150px; /* Tamanho das imagens dos produtos */
+    width: 150px; 
     height: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-    margin-left: auto; /* Empurra a imagem para a direita */
-    margin-right: 30px; /* Adiciona um pequeno espaço à direita */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-left: auto; 
+    margin-right: 30px; 
 }
 
-/* ------------------------------------------ */
-/* Estilo do Título e Descrição do Produto   */
-/* ------------------------------------------ */
+
+/* Estilo do Título e Descrição do Produto*/
+
 .produtos-destaque h5 {
     font-family: 'Alata';
-    font-size: 1.2rem; /* Ajuste o tamanho da fonte */
+    font-size: 1.2rem; 
     color: #333;
     margin-top: 10px;
 }
 
 .produtos-destaque p {
     font-family: 'Alata';
-    font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+    font-size: 0.9rem; 
     color: #555;
     margin-top: 5px;
     
@@ -292,24 +294,24 @@ footer .col-md-6:nth-child(2) {
     margin-top: 15px;
     font-size: 0.9rem;
     padding: 8px 15px;
-    width: 100%; /* Botão ocupa toda a largura */
-    text-align: center; /* Centraliza o texto no botão */
+    width: 100%; 
+    text-align: center; 
     transition: transform 0.3s ease;
 }
 
 .destaque-produto .btn:hover {
     background-color: #218838;
-    transform: scale(1.1); /* Aumenta o tamanho do botão */
+    transform: scale(1.1); 
 }
 
 .produtos-destaque {
-    margin-bottom: 120px; /* Adiciona um espaçamento entre as seções */
+    margin-bottom: 120px; 
 }
 
 
 .preco {
-    color: #000000; /* Preto mais forte */
-    font-weight: 700; /* Negrito mais forte */
+    color: #000000; 
+    font-weight: 700;
 }
 
 
@@ -317,10 +319,10 @@ footer .col-md-6:nth-child(2) {
 /* Pagina Eventos */
 
 
-.hero-image {
+.banner-image {
     width: 100%;
     height: 500px;
-    background-image: url('./img/Banner-eventos.png'); /* Insira a imagem do topo aqui */
+    background-image: url('./img/Banner-eventos.png');
     background-size: cover;
     background-position: center;
     margin-bottom: 40px
@@ -400,20 +402,20 @@ body {
 /* Banner da página de contato */
 .banner-contato {
     background: url('./img/Banner-Contato.png') center center/cover no-repeat;
-    height: 500px; /* Ajuste a altura para o tamanho do banner */
-    padding-top: 40px; /* Adiciona um pequeno padding no topo para o texto */
-    color: transparent; /* Cor transparente para esconder o texto da imagem */
+    height: 500px; 
+    padding-top: 40px; 
+    color: transparent; 
 }
 
 .banner-contato .container {
     text-align: center;
-    background-color: transparent; /* Remove qualquer fundo do container */
+    background-color: transparent; /
 }
 
 /* Texto de contato que ficará abaixo da imagem do banner */
 .banner-contato-texto {
-    background-color: #f8f9fa; /* Cor clara para o fundo do texto */
-    padding: 40px 0; /* Adiciona um espaçamento interno */
+    background-color: #f8f9fa; 
+    padding: 40px 0; 
     text-align: center;
 }
 
@@ -440,47 +442,47 @@ body {
 
 .banner-contato-texto p strong {
     font-weight: bold;
-    color: black; /* Altere para a cor desejada, se necessário */
+    color: black; 
 }
 
 .espaco-contato {
     display: inline-block;
-    margin-bottom: 15px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 15px; 
     color: #4CAF50
 }
 
-/* Aumentando o tamanho do formulário */
+/* Aumentar o tamanho do formulário */
 .formulario-contato form {
     background-color: #4CAF50;
-    padding: 50px 80px; /* Aumenta o padding para criar mais espaço dentro do formulário */
-    width: 100%; /* Faz o formulário ocupar toda a largura possível */
-    max-width: 800px; /* Ajusta a largura máxima do formulário */
-    margin: 0 auto; /* Centraliza o formulário na tela */
-    border-radius: 10px; /* Arredonda os cantos do formulário */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    padding: 50px 80px; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     min-height: 580px;
 }
 
-/* Aumentar o tamanho dos campos de entrada */
+/* Aumentar o tamanho dos campos*/
 .formulario-contato .form-control {
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte nos campos */
-    padding: 15px; /* Aumenta o padding dentro dos campos */
-    border-radius: 8px; /* Arredonda os cantos dos campos */
+    font-size: 1.2rem; 
+    padding: 15px; 
+    border-radius: 8px; /
 }
 
-/* Ajustando o botão de envio */
+/* Ajuste botão enviar */
 .formulario-contato button {
-    font-size: 1.2rem; /* Diminui o tamanho da fonte do botão */
-    padding: 10px 20px; /* Diminui o padding do botão, reduzindo o comprimento */
-    border-radius: 8px; /* Arredonda os cantos do botão */
-    width: auto; /* Mantém o tamanho do botão proporcional ao conteúdo */
-    max-width: 160px; /* Define uma largura máxima para o botão, ajustável conforme necessário */
-    margin: 30px auto 0; /* Centraliza o botão horizontalmente */
-    display: block; /* Torna o botão um bloco para aplicar o margin: auto */
+    font-size: 1.2rem; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    width: auto; 
+    max-width: 160px; 
+    margin: 30px auto 0; 
+    display: block; 
 }
 
 .formulario-contato .form-label {
-    font-size: 1.3rem; /* Aumenta o tamanho da fonte */
+    font-size: 1.3rem; 
     color: black;
     font-family: "Inter";
 }
