@@ -9,7 +9,7 @@
 .navbar-custom {
     height: 130px; 
     padding-top: 10px; 
-    padding-bottom: 10px; /
+    padding-bottom: 10px; 
 }
 
 /* Estilo dos links da barra de navegação */
@@ -26,6 +26,7 @@
     color: #4CAF50 !important; 
     transform: scale(1.1); /* Aumenta o tamanho levemente das letras */
 }
+
 
 /* Banner da página de produtos */
 .banner-produtos {
@@ -138,4 +139,83 @@ footer p {
 /* Ajuste para a coluna específica no rodapé */
 footer .col-md-6:nth-child(2) {
     padding-left: 350px; 
+}
+
+/* Corrigir layout do Footer em dispositivos móveis */
+@media (max-width: 768px) {
+    footer {
+        text-align: center; 
+        padding: 20px 10px; 
+    }
+
+    footer .col-md-6 {
+        padding: 10px; 
+    }
+
+    footer .col-md-6:nth-child(2) {
+        padding-left: 0; 
+    }
+}
+
+
+/* Ajuste da barra de navegação */
+.navbar-custom {
+    height: auto; /* Altura dinâmica para permitir expansão */
+    padding: 10px 0; /* Ajuste do espaçamento */
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .navbar-custom {
+        flex-wrap: wrap; /* Permitir quebra de linha */
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        display: block; /* Logo sempre visível */
+        margin-bottom: 10px; /* Espaço entre o logo e o menu */
+    }
+
+    .navbar-collapse {
+        width: 100%; /* Expandir o menu horizontalmente */
+        margin-top: 10px; /* Espaço abaixo do logo */
+        border-top: 1px solid #ddd; /* Separação do menu */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Alinhar links verticalmente */
+        padding: 10px; /* Espaçamento ao redor dos links */
+        background-color: #f8f9fa; /* Fundo claro */
+        border-radius: 5px; /* Bordas arredondadas */
+    }
+
+    .banner-produtos {
+        margin-top: 20px; /* Espaço após o menu */
+    }
+}
+
+/* Ajuste do container de produtos */
+.container.my-5 {
+    padding: 20px; /* Reduzir padding em telas menores */
+    box-shadow: none; /* Remover sombra para simplificar */
+}
+
+/* Ajuste de imagens no modo mobile */
+@media (max-width: 768px) {
+    .col-md-4 img {
+        max-width: 100%; /* Garantir que imagens se ajustem ao container */
+        margin-top: 10px; /* Espaço adicional para separação */
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+        padding: 10px 5px; /* Ajustar padding em dispositivos menores */
+    }
+
+    footer .col-md-6 {
+        margin-bottom: 10px; /* Espaço entre colunas */
+    }
 }

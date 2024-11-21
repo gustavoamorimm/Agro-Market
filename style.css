@@ -156,6 +156,21 @@ footer p {
     }
 }
 
+/* Estilo do carrossel */
+.carousel-inner img {
+    width: 100%;        /* Garantir que a imagem ocupe toda a largura do carrossel */
+    height: auto;       /* Deixe a altura se ajustar automaticamente */
+    object-fit: cover;  /* A imagem irá cobrir o espaço sem distorcer */
+}
+
+/* Ajustes responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;  
+    }
+}
+
+
 
 
 /* Estilo Pagina Produtos */
@@ -326,6 +341,66 @@ footer p {
     font-weight: 700;
 }
 
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajuste do banner principal */
+    .banner-produtos {
+        height: 150px; /* Reduz a altura do banner */
+        background-size: cover; /* Certifica que a imagem é ajustada */
+        background-position: center;
+    }
+
+    .banner-produtos h2 {
+        font-size: 1.5rem; /* Diminui o tamanho do texto */
+        margin-top: 30px;
+    }
+
+    /* Ajuste dos cards de produtos */
+    .produtos-destaque .row {
+        flex-direction: column; /* Empilha os cards verticalmente */
+        gap: 20px; /* Reduz o espaço entre os cards */
+    }
+
+    .destaque-produto {
+        width: 60%; /* Ocupa toda a largura disponível */
+        margin: 0 auto; /* Centraliza os cards */
+    }
+
+    /* Ajuste das imagens dos produtos */
+    .produtos-destaque .img-produto {
+        width: 150px; /* Reduz o tamanho das imagens */
+        height: auto;
+        margin: 0 auto 10px auto; /* Centraliza e ajusta a margem */
+    }
+
+    /* Títulos e descrições dos produtos */
+    .produtos-destaque h5 {
+        font-size: 1.2rem; /* Reduz o tamanho do texto */
+    }
+
+    .produtos-destaque p {
+        font-size: 1rem; /* Ajusta o tamanho do texto da descrição */
+    }
+
+    /* Botões */
+    .destaque-produto .btn {
+        font-size: 0.8rem; /* Ajusta o tamanho do botão */
+        padding: 8px 10px;
+    }
+
+    /* Ajuste do banner dos mais vendidos */
+    .produtos-destaque .fundo-produtos {
+        height: auto; /* Ajusta automaticamente a altura */
+        padding: 20px; /* Adiciona um espaçamento interno */
+
+    }
+
+    .titulo-mais-vendidos {
+        font-size: 1.7rem; /* Diminui o tamanho do título */
+        margin-bottom: 30px;
+    }
+}
+
 
 
 
@@ -444,6 +519,49 @@ body {
     }
 }
 
+/* Ajustar imagens dentro dos cards de eventos */
+.event-card img {
+    width: 100%; /* Ajusta a largura das imagens para 100% da largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Ajustes para responsividade em dispositivos móveis */
+@media (max-width: 768px) {
+    /* Para a imagem do banner */
+    .banner-image {
+        height: 250px; /* Reduz a altura do banner para telas menores */
+        background-position: center center; /* Garante que a imagem esteja centralizada */
+    }
+
+    /* Para os cards de eventos */
+    .events {
+        flex-direction: column; /* Empilha os cards verticalmente */
+        gap: 20px; /* Ajusta o espaçamento entre os cards */
+        padding: 0 10px; /* Ajusta o espaçamento lateral */
+    }
+
+    .event-card {
+        width: 100%; /* O card ocupa toda a largura disponível */
+        max-width: 100%; /* Garante que os cards não ultrapassem o limite da tela */
+        margin: 0 auto; /* Centraliza os cards */
+        display: flex;
+        flex-direction: column; /* Garante alinhamento vertical */
+    }
+
+    .event-card img {
+        width: 100%; /* Garante que a imagem se ajuste à largura do card */
+        height: auto; /* Mantém a proporção das imagens */
+        object-fit: cover; /* Garante que a imagem cubra a área do card sem distorção */
+    }
+
+    /* Ajuste do botão */
+    .event-card .btn {
+        width: 100%; /* Faz o botão ocupar toda a largura do card */
+        font-size: 1rem; /* Ajusta o tamanho do texto do botão */
+        padding: 12px; /* Melhora o conforto visual */
+    }
+}
 
 
 
@@ -538,6 +656,44 @@ body {
     font-family: "Inter";
 }
 
+/* Responsividade para o banner no mobile */
+@media (max-width: 768px) {
+    .banner-contato {
+        height: 300px;  /* Ajusta a altura do banner em telas menores */
+        background-size: cover; /* Garante que a imagem de fundo cubra toda a área disponível */
+    }
+}
+
+/* Texto de contato que ficará abaixo da imagem do banner */
+.banner-contato-texto {
+    background-color: #f8f9fa; 
+    padding: 40px 0; 
+    text-align: center;
+}
+
+/* Texto da seção de contato */
+.banner-contato-texto h2 {
+    font-family: "Courgette", cursive;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.banner-contato-texto p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Responsividade para texto e layout da seção */
+@media (max-width: 768px) {
+    .banner-contato-texto h2 {
+        font-size: 1.8rem;  /* Diminui o tamanho do título em telas menores */
+    }
+
+    .banner-contato-texto p {
+        font-size: 1rem;  /* Diminui o tamanho do texto do parágrafo */
+    }
+}
 
 /* Pagina Sobre */
 
